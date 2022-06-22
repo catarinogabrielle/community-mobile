@@ -34,13 +34,18 @@ color: ${ColorTheme.Cinza} ;
 `;
 
 export const ContainerButton = styled.View`                                    
-width: 95%;
+width: 90%;
 height: 50px;
 justify-content: space-between;
 align-items: center;
 flex-direction: row;
 margin-top: 10px;
-padding-left: 5px;
+`;
+
+export const ButtonText = styled.Text`                                    
+color: ${ColorTheme.Cinza};
+font-size: 18px;
+font-weight: bold;
 `;
 
 export const Button = styled.TouchableOpacity`                                    
@@ -52,8 +57,19 @@ justify-content: center;
 align-items: center;
 `;
 
-export const ButtonText = styled.Text`                                    
+export const ContainerSignUp = styled.View`                                    
+justify-content: center;
+align-items: flex-start;
+width: 90%;
+`;
+
+export const ButtonSignUp = styled.TouchableOpacity`                                    
+top: 80px;
+`;
+
+export const TextSignUp = styled.Text`                                    
+text-decoration: underline;
 color: ${ColorTheme.Cinza};
-font-size: 17px;
+font-size: 13px;
 font-weight: bold;
 `;

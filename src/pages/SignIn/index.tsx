@@ -5,7 +5,7 @@ const ColorTheme = Colors['Theme'];
 
 import { Feather } from '@expo/vector-icons'
 
-import { Container, Logo, InputContainer, Input, ContainerButton, Button, ButtonText } from './styles';
+import { Container, Logo, InputContainer, Input, ContainerButton, Button, ButtonText, ContainerSignUp, ButtonSignUp, TextSignUp } from './styles';
 
 export default function SignIn() {
     const [email, setEmail] = useState('')
@@ -23,7 +23,7 @@ export default function SignIn() {
     return (
         <Container>
             <Logo
-                source={require('../../assets/logo.jpeg')}
+                source={require('../../assets/logo.png')}
             />
 
             <InputContainer>
@@ -42,11 +42,17 @@ export default function SignIn() {
                     onChangeText={setPassword}
                 />
                 <ContainerButton>
-                    <ButtonText>Acessar</ButtonText>
+                    <ButtonText>Sign In</ButtonText>
                     <Button onPress={handleLogin}>
                         <Feather name="arrow-right" size={20} color={ColorTheme.Branco} />
                     </Button>
                 </ContainerButton>
+
+                <ContainerSignUp>
+                    <ButtonSignUp>
+                        <TextSignUp>Sign Up</TextSignUp>
+                    </ButtonSignUp>
+                </ContainerSignUp>
             </InputContainer>
         </Container>
     )
