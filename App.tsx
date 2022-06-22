@@ -9,7 +9,7 @@ const ColorTheme = Colors['Theme'];
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor={ColorTheme.AzulEscuro} barStyle="light-content" translucent={false} />
+      <StatusBar backgroundColor={ColorTheme.Cinza} barStyle="light-content" translucent={false} />
       <Routes />
     </NavigationContainer>
   );

@@ -1,9 +1,9 @@
 export default {
 	Theme: {
-		Branco: '#f1f1f1',
-		Preto: '#191A1B',
-		AzulClaro: '#1956B4',
-		AzulEscuro: '#0B2844',
-		Roxo: '#662074'
+		Branco: '#e6e5de',
+		Preto: '#1e1e2a',
+		AzulClaro: '#57bee6',
+		Cinza: '#3d424a',
+		Amarelo: '#feae49',
 	},
 };

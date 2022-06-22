@@ -15,11 +15,11 @@ function Routes() {
     return (
       <View style={{
         flex: 1,
-        backgroundColor: ColorTheme.AzulEscuro,
+        backgroundColor: ColorTheme.Branco,
         justifyContent: 'center',
         alignContent: 'center'
       }}>
-        <ActivityIndicator size={60} color={ColorTheme.Branco} />
+        <ActivityIndicator size={60} color={ColorTheme.Cinza} />
       </View>
     )
   }

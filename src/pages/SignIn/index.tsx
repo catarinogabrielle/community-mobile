@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import Colors from '../../../constants/Colors';
 const ColorTheme = Colors['Theme'];
 
-import { Container, Logo, InputContainer, Input, Button, ButtonText } from './styles';
+import { Feather } from '@expo/vector-icons'
+
+import { Container, Logo, InputContainer, Input, ContainerButton, Button, ButtonText } from './styles';
 
 export default function SignIn() {
     const [email, setEmail] = useState('')
@@ -39,10 +41,12 @@ export default function SignIn() {
                     value={password}
                     onChangeText={setPassword}
                 />
-
-                <Button onPress={handleLogin}>
+                <ContainerButton>
                     <ButtonText>Acessar</ButtonText>
-                </Button>
+                    <Button onPress={handleLogin}>
+                        <Feather name="arrow-right" size={20} color={ColorTheme.Branco} />
+                    </Button>
+                </ContainerButton>
             </InputContainer>
         </Container>
     )
