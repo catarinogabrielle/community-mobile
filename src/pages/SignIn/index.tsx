@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import Colors from '../../../constants/Colors';
 const ColorTheme = Colors['Theme'];
 
 import { Feather } from '@expo/vector-icons'
+import { AuthContext } from '../../contexts/AuthContext';
 
 import { Container, Logo, InputContainer, Input, ContainerButton, Button, ButtonText, ContainerSignUp, ButtonSignUp, TextSignUp } from './styles';
 
 export default function SignIn() {
+    const { signIn } = useContext(AuthContext);
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    function handleLogin() {
+    async function handleLogin() {
 
         if (email === '' || password === '') {
             return;
         }
 
-        console.log("Email digitado " + email)
+        await signIn({ email, password })
+
     }
 
     return (
