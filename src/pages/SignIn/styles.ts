@@ -11,6 +11,8 @@ background-color: ${ColorTheme.AzulEscuro};
 
 export const Logo = styled.Image`                                    
 margin-bottom: 18px;
+width: 80%;
+height: 60px;
 `;
 
 export const InputContainer = styled.View`                                    
