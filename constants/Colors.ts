@@ -2,8 +2,7 @@ export default {
 	Theme: {
 		Branco: '#e6e5de',
 		Preto: '#1e1e2a',
-		AzulClaro: '#57bee6',
+		Verde: '#10b2aa',
 		Cinza: '#3d424a',
-		Amarelo: '#feae49',
 	},
 };
