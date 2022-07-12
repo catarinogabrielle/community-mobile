@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { Text } from 'react-native';
 
 import Colors from '../../../constants/Colors';
 const ColorTheme = Colors['Theme'];
@@ -6,7 +7,7 @@ const ColorTheme = Colors['Theme'];
 import { Feather } from '@expo/vector-icons'
 import { AuthContext } from '../../contexts/AuthContext';
 
-import { Container, Logo, InputContainer, Input, ContainerButton, Button, ButtonText, ContainerSignUp, ButtonSignUp, TextSignUp } from './styles';
+import { Container, Logo, InputContainer, Input, ContainerButton, Button, ButtonText, ContainerSignUp, ButtonSignUp, TextSignUp, TextUnderline } from './styles';
 
 export default function SignIn() {
     const { signIn } = useContext(AuthContext);
@@ -46,7 +47,7 @@ export default function SignIn() {
                     onChangeText={setPassword}
                 />
                 <ContainerButton>
-                    <ButtonText>Sign In</ButtonText>
+                    <ButtonText>Acessar</ButtonText>
                     <Button onPress={handleLogin}>
                         <Feather name="arrow-right" size={20} color={ColorTheme.Branco} />
                     </Button>
@@ -54,7 +55,7 @@ export default function SignIn() {
 
                 <ContainerSignUp>
                     <ButtonSignUp>
-                        <TextSignUp>Sign Up</TextSignUp>
+                        <TextSignUp>Não possui uma conta? <TextUnderline>Cadastre-se</TextUnderline></TextSignUp>
                     </ButtonSignUp>
                 </ContainerSignUp>
             </InputContainer>

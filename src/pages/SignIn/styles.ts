@@ -67,9 +67,15 @@ export const ButtonSignUp = styled.TouchableOpacity`
 top: 80px;
 `;
 
-export const TextSignUp = styled.Text`                                    
-text-decoration: underline;
+export const TextSignUp = styled.Text` 
 color: ${ColorTheme.Cinza};
-font-size: 13px;
+font-size: 12.4px;
 font-weight: bold;
+`;
+
+export const TextUnderline = styled.Text` 
+color: ${ColorTheme.Verde};
+font-size: 12.4px;
+font-weight: bold;
+text-decoration: underline;
 `;
